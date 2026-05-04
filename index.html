@@ -18,7 +18,6 @@ body{background:var(--bg);color:var(--t);font-family:'Inter',system-ui,-apple-sy
 a{text-decoration:none;color:inherit}
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,11,18,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 3rem}
 .nav-brand{display:flex;align-items:center;gap:.6rem}
 .nav-init{width:28px;height:28px;border-radius:5px;background:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.68rem;color:#fff;letter-spacing:.03em}
@@ -29,7 +28,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,11,18,.94)
 .nav-cta{padding:.32rem .85rem;border-radius:4px;background:var(--blue);color:#fff;font-size:.72rem;font-weight:600;letter-spacing:.03em;transition:opacity .2s}
 .nav-cta:hover{opacity:.82}
 
-/* HERO */
 #hero{min-height:100vh;display:flex;align-items:center;padding-top:52px;position:relative;overflow:hidden}
 .hero-glow{position:absolute;top:20%;left:10%;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(91,141,238,.06) 0%,transparent 70%);pointer-events:none}
 .hero-inner{max-width:1020px;margin:0 auto;padding:5rem 3rem;display:grid;grid-template-columns:1fr 180px;gap:5rem;align-items:center;width:100%}
@@ -51,7 +49,6 @@ h1{font-size:clamp(2rem,3.5vw,2.9rem);font-weight:800;line-height:1.1;letter-spa
 .hs-num{font-size:1.5rem;font-weight:800;color:var(--t);line-height:1;letter-spacing:-.02em}
 .hs-lbl{font-size:.62rem;color:var(--t3);font-weight:500;text-transform:uppercase;letter-spacing:.08em;margin-top:.18rem}
 
-/* SECTIONS */
 section{padding:4.5rem 3rem;border-bottom:1px solid var(--border)}
 .ct{max-width:1020px;margin:0 auto}
 .sh{display:flex;align-items:center;gap:.8rem;margin-bottom:2.8rem}
@@ -59,7 +56,6 @@ section{padding:4.5rem 3rem;border-bottom:1px solid var(--border)}
 .st{font-size:1.15rem;font-weight:700;letter-spacing:-.02em}
 .sl2{flex:1;height:1px;background:var(--border)}
 
-/* ABOUT */
 #about{background:var(--bg)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
 .about-text p{color:var(--t2);line-height:1.9;font-size:.87rem;margin-bottom:1rem}
@@ -71,7 +67,6 @@ section{padding:4.5rem 3rem;border-bottom:1px solid var(--border)}
 .su{font-size:1rem;color:var(--blue)}
 .sl3{font-size:.68rem;color:var(--t3);margin-top:.25rem;line-height:1.45;font-weight:400}
 
-/* SKILLS */
 #skills{background:var(--bg2)}
 .skg{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
 .skb{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:1.2rem}
@@ -81,7 +76,6 @@ section{padding:4.5rem 3rem;border-bottom:1px solid var(--border)}
 .tag:hover{background:var(--blue-d);border-color:var(--border2);color:var(--t)}
 .tag.h{background:var(--blue-d);border-color:var(--border2);color:#a8c4ff;font-weight:500}
 
-/* EXPERIENCE */
 #exp{background:var(--bg)}
 .tl{display:flex;flex-direction:column;gap:0}
 .tl-item{display:grid;grid-template-columns:170px 1fr;gap:2.5rem;padding:1.8rem 0;border-bottom:1px solid var(--border)}
@@ -89,7 +83,6 @@ section{padding:4.5rem 3rem;border-bottom:1px solid var(--border)}
 .ti-meta{padding-top:.15rem}
 .ti-co{font-size:.82rem;font-weight:700;color:var(--t);margin-bottom:.2rem}
 .ti-period{font-size:.68rem;color:var(--t3);line-height:1.5;font-weight:400}
-.ti-cur{display:inline-flex;align-items:center;gap:.28rem;margin-top:.4rem;padding:.12rem .48rem;border-radius:3px;background:rgba(45,212,160,.06);border:1px solid rgba(45,212,160,.16);color:var(--green);font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
 .tc-role{font-size:.88rem;font-weight:700;color:var(--t);margin-bottom:.7rem;letter-spacing:-.01em}
 .tb{list-style:none;display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem}
 .tb li{font-size:.8rem;color:var(--t2);padding-left:.9rem;position:relative;line-height:1.6}
@@ -97,12 +90,13 @@ section{padding:4.5rem 3rem;border-bottom:1px solid var(--border)}
 .tb li b{color:var(--t);font-weight:600}
 .aw{display:inline-flex;align-items:center;gap:.25rem;margin-top:.5rem;padding:.14rem .52rem;border-radius:3px;background:rgba(245,166,35,.06);border:1px solid rgba(245,166,35,.18);color:var(--amber);font-size:.65rem;font-weight:600;letter-spacing:.02em}
 
-/* PROJECTS */
 #projects{background:var(--bg2)}
 .pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.1rem}
 .pc{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:1.4rem;transition:border-color .2s,transform .2s}
 .pc:hover{border-color:var(--border2);transform:translateY(-2px)}
-.pn{font-size:.88rem;font-weight:700;color:var(--t);margin-bottom:.7rem;letter-spacing:-.01em}
+.pn{font-size:.88rem;font-weight:700;color:var(--t);margin-bottom:.7rem;letter-spacing:-.01em;display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.pn-link{font-size:.7rem;color:var(--blue);font-weight:500;white-space:nowrap;opacity:.8;transition:opacity .15s}
+.pn-link:hover{opacity:1}
 .pts{display:flex;flex-wrap:wrap;gap:.28rem;margin-bottom:.85rem}
 .pt{padding:.13rem .5rem;border-radius:3px;background:var(--blue-d);color:#a8c4ff;font-size:.66rem;font-weight:600}
 .pb{list-style:none;display:flex;flex-direction:column;gap:.35rem}
@@ -111,7 +105,6 @@ section{padding:4.5rem 3rem;border-bottom:1px solid var(--border)}
 .pi{display:flex;gap:.38rem;margin-top:.9rem;flex-wrap:wrap}
 .ip{padding:.15rem .58rem;border-radius:3px;background:rgba(45,212,160,.06);border:1px solid rgba(45,212,160,.15);color:var(--green);font-size:.66rem;font-weight:600}
 
-/* ACHIEVEMENTS / IMPACT */
 #ach{background:var(--bg)}
 .impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.85rem;margin-bottom:2rem}
 .ac{background:var(--bg2);border:1px solid var(--border);border-top:2px solid var(--blue);border-radius:var(--r);padding:1.2rem}
@@ -123,12 +116,12 @@ section{padding:4.5rem 3rem;border-bottom:1px solid var(--border)}
 .aw-title{font-size:.81rem;font-weight:600;color:var(--t)}
 .aw-sub{font-size:.7rem;color:var(--t3);margin-top:.08rem}
 
-/* CERTS */
 #certs{background:var(--bg2)}
 .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:.85rem;margin-bottom:1.8rem}
 .cert-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:1rem 1.2rem;display:flex;align-items:center;gap:.85rem;text-decoration:none;color:inherit;cursor:pointer;transition:border-color .2s ease,transform .2s ease,background .2s ease}
 .cert-card:hover{border-color:var(--border2);background:var(--bg4);transform:translateY(-2px)}
 .cert-ico{width:36px;height:36px;border-radius:5px;background:var(--blue);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.63rem;color:#fff;flex-shrink:0;letter-spacing:.02em}
+.cert-ico.ai{background:linear-gradient(135deg,#7c3aed,#5b8dee)}
 .cert-name{font-size:.8rem;font-weight:600;color:var(--t)}
 .cert-yr{font-size:.68rem;color:var(--t3);margin-top:.1rem}
 .edu-block{padding:1.25rem 1.4rem;background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);display:flex;align-items:center;gap:1rem}
@@ -136,7 +129,6 @@ section{padding:4.5rem 3rem;border-bottom:1px solid var(--border)}
 .edu-deg{font-size:.83rem;font-weight:700;color:var(--t)}
 .edu-inst{font-size:.71rem;color:var(--t3);margin-top:.12rem}
 
-/* CONTACT */
 #contact{background:var(--bg)}
 .contact-desc{color:var(--t2);font-size:.85rem;max-width:480px;margin-bottom:1.6rem;line-height:1.85}
 .crow{display:flex;gap:.7rem;flex-wrap:wrap}
@@ -144,7 +136,6 @@ section{padding:4.5rem 3rem;border-bottom:1px solid var(--border)}
 .ci2:hover{border-color:var(--border2);color:var(--t);background:var(--blue-d)}
 .ci-ico{font-size:.8rem;opacity:.6}
 
-/* CHAT */
 #cbtn{position:fixed;bottom:1.5rem;right:1.6rem;z-index:200;display:flex;align-items:center;gap:.4rem;padding:.48rem .9rem;border-radius:5px;background:var(--bg2);border:1px solid var(--border2);cursor:pointer;color:var(--t2);font-size:.74rem;font-weight:600;letter-spacing:.03em;transition:all .2s;box-shadow:0 4px 20px rgba(0,0,0,.4)}
 #cbtn:hover{border-color:var(--blue);color:var(--t);background:var(--blue-d)}
 #cpanel{position:fixed;bottom:4.5rem;right:1.6rem;z-index:200;width:340px;max-height:490px;background:var(--bg2);border:1px solid var(--border);border-radius:9px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.6);transition:opacity .2s,transform .2s;opacity:0;transform:translateY(10px) scale(.97);pointer-events:none}
@@ -174,10 +165,8 @@ section{padding:4.5rem 3rem;border-bottom:1px solid var(--border)}
 .csd{padding:.36rem .78rem;border-radius:4px;background:var(--blue);border:none;cursor:pointer;color:#fff;font-size:.73rem;font-weight:600;transition:opacity .15s;flex-shrink:0}
 .csd:hover{opacity:.85}
 ::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(255,255,255,.07);border-radius:2px}
-
 footer{padding:1.4rem 3rem;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border)}
 .fl{font-size:.7rem;color:var(--t3)}
-
 @media(max-width:768px){
   nav{padding:0 1.2rem}.nav-links{display:none}
   section{padding:3.5rem 1.4rem}
@@ -210,7 +199,6 @@ footer{padding:1.4rem 3rem;display:flex;justify-content:space-between;align-item
   <a href="tel:+918800628098" class="btn nav-cta">+91 88006 28098</a>
 </nav>
 
-<!-- HERO -->
 <section id="hero">
   <div class="hero-glow"></div>
   <div class="hero-inner">
@@ -240,13 +228,12 @@ footer{padding:1.4rem 3rem;display:flex;justify-content:space-between;align-item
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="ct">
     <div class="sh"><span class="sl">Profile</span><h2 class="st">About</h2><div class="sl2"></div></div>
     <div class="about-grid">
       <div class="about-text">
-        <p>I'm a Senior QA Lead and Lead SDET with 13+ years of experience building automation infrastructure that scales with engineering organisations. Currently at <strong>Oracle</strong> as Principal Member of Technical Staff, I own the end-to-end quality strategy for AGCS — a cloud-native identity governance platform running across distributed OCI environments.</p>
+        <p>I'm a Senior QA Lead and Lead SDET with 13+ years of experience building automation infrastructure that scales with engineering organisations. Most recently at <strong>Oracle</strong> as Principal Member of Technical Staff, I owned the end-to-end quality strategy for AGCS — a cloud-native identity governance platform running across distributed OCI environments.</p>
         <p>My core expertise is in <strong>AI-enhanced automation</strong>: self-healing test frameworks, intelligent test generation, predictive test selection, and NLP-based log analysis — all integrated into modern CI/CD pipelines. I've led quality adoption across 100+ OCI teams, mentored engineers at all levels, and driven consistent, measurable improvements in release quality at enterprise scale.</p>
         <p>Before Oracle, I built scalable automation for high-stakes financial data platforms at <strong>S&amp;P Global / IHS Markit</strong> and for an AI-driven contract management SaaS at <strong>SirionLabs</strong>. I'm now exploring Principal QA Lead, Lead SDET, QA Architect, and QA Manager opportunities.</p>
       </div>
@@ -260,7 +247,6 @@ footer{padding:1.4rem 3rem;display:flex;justify-content:space-between;align-item
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
   <div class="ct">
     <div class="sh"><span class="sl">Expertise</span><h2 class="st">Technical Skills</h2><div class="sl2"></div></div>
@@ -299,17 +285,16 @@ footer{padding:1.4rem 3rem;display:flex;justify-content:space-between;align-item
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section id="exp">
   <div class="ct">
     <div class="sh"><span class="sl">Career</span><h2 class="st">Work Experience</h2><div class="sl2"></div></div>
     <div class="tl">
 
+      <!-- CHANGE 2: Sep 2022 – April 2026 (removed "Current" badge) -->
       <div class="tl-item">
         <div class="ti-meta">
           <div class="ti-co">Oracle</div>
-          <div class="ti-period">Sep 2022 – Present<br>Gurgaon, India</div>
-          <div class="ti-cur"><span class="avail-dot"></span>Current</div>
+          <div class="ti-period">Sep 2022 – April 2026<br>Gurgaon, India</div>
         </div>
         <div>
           <div class="tc-role">Principal Member of Technical Staff — QA Lead / Lead SDET</div>
@@ -351,7 +336,7 @@ footer{padding:1.4rem 3rem;display:flex;justify-content:space-between;align-item
           <div class="tc-role">Senior Test Engineer</div>
           <ul class="tb">
             <li>Built end-to-end UI and backend automation for an <b>AI-based contract lifecycle management SaaS platform</b> from the ground up, enabling faster feature releases</li>
-            <li>Optimised regression cycles through parallel execution strategies and intelligent test prioritisation — reduced turnaround time substantially</li>
+            <li>Optimised regression cycles through parallel execution strategies and intelligent test prioritisation</li>
             <li>Worked closely with AI/ML engineers to design test strategies for NLP-based contract analysis modules and document classification features</li>
           </ul>
           <div class="aw">🏆 Star Award · SirionLabs 2016</div>
@@ -377,13 +362,17 @@ footer{padding:1.4rem 3rem;display:flex;justify-content:space-between;align-item
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
   <div class="ct">
     <div class="sh"><span class="sl">Work</span><h2 class="st">Key Projects</h2><div class="sl2"></div></div>
     <div class="pg">
+
+      <!-- CHANGE 3a: AI Framework GitHub link -->
       <div class="pc">
-        <div class="pn">AI-Powered UI Automation Framework</div>
+        <div class="pn">
+          AI-Powered UI Automation Framework
+          <a class="pn-link" href="https://github.com/aroragaurav2810/ui-automation-framework-ai-copilot-playwright-typescript" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
         <div class="pts"><span class="pt">Playwright</span><span class="pt">TypeScript</span><span class="pt">GitHub Actions</span><span class="pt">Docker</span><span class="pt">Kubernetes</span></div>
         <ul class="pb">
           <li>Production-grade framework with AI-generated test cases, test data synthesis, and dynamically generated Page Object Models — zero boilerplate for new features</li>
@@ -393,8 +382,13 @@ footer{padding:1.4rem 3rem;display:flex;justify-content:space-between;align-item
         </ul>
         <div class="pi"><span class="ip">~30% effort reduction</span><span class="ip">Zero flaky blockers</span></div>
       </div>
+
+      <!-- CHANGE 3b: Terraform Framework GitHub link -->
       <div class="pc">
-        <div class="pn">Terraform IaC — Test Environment Automation</div>
+        <div class="pn">
+          Terraform IaC — Test Environment Automation
+          <a class="pn-link" href="https://github.com/aroragaurav2810/standalone_demolab_infra_setup_terraform" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </div>
         <div class="pts"><span class="pt">Terraform</span><span class="pt">OCI</span><span class="pt">IaC</span><span class="pt">Cloud Provisioning</span><span class="pt">Bash</span></div>
         <ul class="pb">
           <li>Automated on-demand provisioning of complex cloud test environments across OCI for multi-system integration testing scenarios</li>
@@ -404,6 +398,7 @@ footer{padding:1.4rem 3rem;display:flex;justify-content:space-between;align-item
         </ul>
         <div class="pi"><span class="ip">70–80% faster setup</span><span class="ip">Zero config errors</span></div>
       </div>
+
       <div class="pc">
         <div class="pn">Financial Platform API &amp; Data Validation Suite</div>
         <div class="pts"><span class="pt">Java</span><span class="pt">REST Assured</span><span class="pt">AWS Lambda</span><span class="pt">DynamoDB</span><span class="pt">ECS</span></div>
@@ -415,11 +410,11 @@ footer{padding:1.4rem 3rem;display:flex;justify-content:space-between;align-item
         </ul>
         <div class="pi"><span class="ip">~50% faster regression</span><span class="ip">High data accuracy</span></div>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- IMPACT / ACHIEVEMENTS -->
 <section id="ach">
   <div class="ct">
     <div class="sh"><span class="sl">Impact</span><h2 class="st">Achievements &amp; Recognition</h2><div class="sl2"></div></div>
@@ -437,14 +432,31 @@ footer{padding:1.4rem 3rem;display:flex;justify-content:space-between;align-item
   </div>
 </section>
 
-<!-- CERTS & EDUCATION -->
 <section id="certs">
   <div class="ct">
     <div class="sh"><span class="sl">Credentials</span><h2 class="st">Certifications &amp; Education</h2><div class="sl2"></div></div>
     <div class="cert-grid">
-      <a class="cert-card" href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=7549B9BB57626B1B42AB1B518AD74EB61362512C32BAE8D38AAC4DA6BD17E087" target="_blank" rel="noopener noreferrer"><div class="cert-ico">OCI</div><div><div class="cert-name">OCI AI Foundation Associate</div><div class="cert-yr">Oracle · 2025</div></div></a>
-      <a class="cert-card" href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=1D7E0A8A0FCD27197A76710B7273BAEDFD277CA2DF7825F9ECCD15369D0B0C9D" target="_blank" rel="noopener noreferrer"><div class="cert-ico">OCI</div><div><div class="cert-name">OCI Foundation Associate</div><div class="cert-yr">Oracle · 2022, 2023</div></div></a>
-      <a class="cert-card" href="https://www.credly.com/badges/a66166a1-7622-4f12-9702-da6f58047c5b" target="_blank" rel="noopener noreferrer"><div class="cert-ico">Java</div><div><div class="cert-name">Oracle Java Certified Professional</div><div class="cert-yr">Oracle · 2017</div></div></a>
+      <!-- CHANGE 4: Two new Anthropic certs -->
+      <a class="cert-card" href="https://verify.skilljar.com/c/oqddmdygjakx" target="_blank" rel="noopener noreferrer">
+        <div class="cert-ico ai" style="font-size:.55rem;letter-spacing:0">AI</div>
+        <div><div class="cert-name">Claude 101</div><div class="cert-yr">Anthropic · 2026</div></div>
+      </a>
+      <a class="cert-card" href="https://verify.skilljar.com/c/r5vs83986w9d" target="_blank" rel="noopener noreferrer">
+        <div class="cert-ico ai" style="font-size:.48rem;letter-spacing:0;text-align:center;line-height:1.25">Claude Code</div>
+        <div><div class="cert-name">Claude Code in Action</div><div class="cert-yr">Anthropic · 2026</div></div>
+      </a>
+      <a class="cert-card" href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=7549B9BB57626B1B42AB1B518AD74EB61362512C32BAE8D38AAC4DA6BD17E087" target="_blank" rel="noopener noreferrer">
+        <div class="cert-ico">OCI</div>
+        <div><div class="cert-name">OCI AI Foundation Associate</div><div class="cert-yr">Oracle · 2025</div></div>
+      </a>
+      <a class="cert-card" href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=1D7E0A8A0FCD27197A76710B7273BAEDFD277CA2DF7825F9ECCD15369D0B0C9D" target="_blank" rel="noopener noreferrer">
+        <div class="cert-ico">OCI</div>
+        <div><div class="cert-name">OCI Foundation Associate</div><div class="cert-yr">Oracle · 2022, 2023</div></div>
+      </a>
+      <a class="cert-card" href="https://www.credly.com/badges/a66166a1-7622-4f12-9702-da6f58047c5b" target="_blank" rel="noopener noreferrer">
+        <div class="cert-ico">Java</div>
+        <div><div class="cert-name">Oracle Java Certified Professional</div><div class="cert-yr">Oracle · 2017</div></div>
+      </a>
     </div>
     <div class="edu-block">
       <div class="edu-ico">🎓</div>
@@ -456,7 +468,6 @@ footer{padding:1.4rem 3rem;display:flex;justify-content:space-between;align-item
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="ct">
     <div class="sh"><span class="sl">Contact</span><h2 class="st">Get in Touch</h2><div class="sl2"></div></div>
@@ -476,7 +487,6 @@ footer{padding:1.4rem 3rem;display:flex;justify-content:space-between;align-item
   <span class="fl">gauravarora.epri@gmail.com · +91 8800628098</span>
 </footer>
 
-<!-- AI CHAT -->
 <button id="cbtn">💬 Ask AI About Me</button>
 <div id="cpanel">
   <div class="chdr">
@@ -505,11 +515,11 @@ footer{padding:1.4rem 3rem;display:flex;justify-content:space-between;align-item
 <script>
 const RESUME=`Gaurav Arora — QA Lead / Lead SDET. Gurgaon, India. Email: gauravarora.epri@gmail.com. Phone: +91-8800628098.
 13+ years in QA leadership and test automation for cloud-native and enterprise systems.
-Current: Oracle – Principal Member of Technical Staff (Sep 2022–Present). QA strategy for AGCS (cloud-native identity governance on OCI). AI-driven self-healing automation (Playwright+TypeScript, Selenium, API). ~50% regression efficiency gain. 70-80% infra provisioning time reduced via Terraform. Led 100+ OCI teams. Employee Recognition Award 2025.
+Current: Oracle – Principal Member of Technical Staff (Sep 2022 – April 2026). QA strategy for AGCS (cloud-native identity governance on OCI). AI-driven self-healing automation (Playwright+TypeScript, Selenium, API). ~50% regression efficiency gain. 70-80% infra provisioning time reduced via Terraform. Led 100+ OCI teams. Employee Recognition Award 2025.
 Previous: S&P Global/IHS Markit Senior QA Lead (2017–2022): financial platforms, Selenium/Java/BDD/AWS, Star Award 2021. SirionLabs Senior Test Engineer (2014–2017): AI SaaS platform, Star Award 2016. CyberQ/Eastern Horizon (2012–2014): government/e-commerce systems.
 Education: B.Tech CSE, MDU 2012.
 Skills: Playwright, Selenium, Java, TypeScript, Python, TestNG, REST Assured, BDD/Cucumber, OCI, AWS, Kubernetes, Terraform, Docker, GitHub Actions, Jenkins, AI test generation, self-healing frameworks, NLP log analysis, Git, Linux, Postman, Grafana, DynamoDB, MongoDB, PostgreSQL.
-Certifications: OCI AI Foundation (2025), OCI Foundation (2022/23), Oracle Java Certified (2017).
+Certifications: Claude 101 (Anthropic, 2026), Claude Code in Action (Anthropic, 2026), OCI AI Foundation (2025), OCI Foundation (2022/23), Oracle Java Certified (2017).
 Open to: Principal QA Lead, Lead SDET, QA Architect, QA Manager roles.`;
 
 let hist=[];
@@ -536,22 +546,132 @@ document.getElementById('csd').onclick=()=>{const v=inp.value.trim();if(v)chat(v
 inp.onkeydown=e=>{if(e.key==='Enter'&&inp.value.trim())chat(inp.value.trim())};
 function ac(q){panel.classList.add('open');setTimeout(()=>chat(q),80)}
 
+// CHANGE 1: Resume PDF download via jsPDF
 function downloadResume(e){
   e.preventDefault();
-  const content=`GAURAV ARORA\nQA Lead / Lead SDET\nGurgaon, India | +91-8800628098 | gauravarora.epri@gmail.com\nLinkedIn: linkedin.com/in/gaurav-arora2810 | GitHub: github.com/aroragaurav2810\n\nSUMMARY\nSenior QA Lead / Lead SDET with 13+ years of experience building scalable automation frameworks and leading quality engineering for cloud-native systems. Expertise in Selenium, Playwright, Java, TypeScript, API testing, and cloud platforms (OCI, AWS). Specialised in AI-enhanced automation.\n\nEXPERIENCE\n\nOracle | Principal Member of Technical Staff — QA Lead / Lead SDET | Sep 2022 – Present\n• Owned QA strategy for AGCS (cloud-native identity governance on OCI)\n• AI-driven self-healing automation — reduced maintenance by ~30%\n• Improved regression efficiency by ~50%\n• Reduced infra provisioning by 70–80% via Terraform\n• Led QA adoption across 100+ OCI teams\n• Employee Recognition Award 2025\n\nS&P Global (IHS Markit) | Senior QA Engineer / Lead | May 2017 – Sep 2022\n• Led automation for high-scale financial platforms\n• Selenium, Java, TestNG, BDD, AWS (Lambda, DynamoDB, ECS)\n• Star Award 2021\n\nSirionLabs | Senior Test Engineer | Dec 2014 – May 2017\n• Built automation for AI-based contract management SaaS platform\n• Star Award 2016\n\nCyberQ / Eastern Horizon | Software Test Engineer | May 2012 – Nov 2014\n\nSKILLS\nAutomation: Selenium, Playwright, Java, TypeScript, Python, TestNG, REST Assured, Cucumber BDD\nAI Testing: AI test generation, self-healing frameworks, NLP log analysis, predictive test selection\nCloud/DevOps: OCI, AWS, Kubernetes, Terraform, Docker, GitHub Actions, Jenkins\nTools: Git, Linux, Postman, Grafana, DynamoDB, MongoDB, PostgreSQL\n\nCERTIFICATIONS\n• OCI AI Foundation Associate — Oracle (2025)\n• OCI Foundation Associate — Oracle (2022, 2023)\n• Oracle Java Certified Professional (2017)\n\nEDUCATION\nB.Tech in Computer Science Engineering — MDU, 2012`;
+  const lines=[
+    ['GAURAV ARORA','title'],
+    ['QA Lead / Lead SDET','subtitle'],
+    ['Gurgaon, India  |  +91-8800628098  |  gauravarora.epri@gmail.com','normal'],
+    ['linkedin.com/in/gaurav-arora2810  |  github.com/aroragaurav2810','normal'],
+    ['','normal'],
+    ['SUMMARY','heading'],
+    ['Senior QA Lead / Lead SDET with 13+ years of experience building scalable automation','normal'],
+    ['frameworks and leading quality engineering for cloud-native systems. Expertise in Selenium,','normal'],
+    ['Playwright, Java, TypeScript, API testing, OCI and AWS. Specialised in AI-enhanced automation','normal'],
+    ['including intelligent test generation, self-healing systems, and AI-based failure analysis.','normal'],
+    ['','normal'],
+    ['CORE SKILLS','heading'],
+    ['QA Leadership: Test Strategy, Automation Roadmaps, Agile/Scrum, Stakeholder Management','normal'],
+    ['Automation: Selenium, Playwright, Java, TypeScript, Python, TestNG, REST Assured, BDD','normal'],
+    ['AI in Testing: AI test generation, self-healing frameworks, NLP log analysis, GitHub Copilot','normal'],
+    ['Cloud & DevOps: OCI, AWS, Kubernetes, Terraform, Docker, Helm, GitHub Actions, Jenkins','normal'],
+    ['Tools: Linux, Bash, Git, Postman, Grafana, DynamoDB, MongoDB, PostgreSQL','normal'],
+    ['','normal'],
+    ['KEY PROJECTS','heading'],
+    ['AI-Powered UI Automation Framework (Playwright + TypeScript)','subheading'],
+    ['github.com/aroragaurav2810/ui-automation-framework-ai-copilot-playwright-typescript','normal'],
+    ['• Production-grade framework with AI-generated test cases, test data, and Page Object Models','normal'],
+    ['• Self-healing capabilities via fallback/mocking — improved test stability across environments','normal'],
+    ['• CI/CD integration (GitHub Actions), containerised with Docker & Kubernetes','normal'],
+    ['• Reduced manual automation effort by ~30%','normal'],
+    ['','normal'],
+    ['Terraform Infrastructure Automation Framework','subheading'],
+    ['github.com/aroragaurav2810/standalone_demolab_infra_setup_terraform','normal'],
+    ['• Automated provisioning of cloud environments for testing and demos on OCI','normal'],
+    ['• Reduced infrastructure setup time by 70–80%, eliminated manual configuration errors','normal'],
+    ['• Supported OID, OUD, EBS, Active Directory, NetSuite, Fusion, and DB systems','normal'],
+    ['','normal'],
+    ['KEY ACHIEVEMENTS','heading'],
+    ['• Employee Recognition Award (2025) at Oracle — exemplary ownership beyond project scope','normal'],
+    ['• Star Award (2021) at IHS Markit — outstanding performance and contribution','normal'],
+    ['• Star Award (2016) at SirionLabs — outstanding performance and contribution','normal'],
+    ['• Improved regression efficiency by ~50% through scalable automation frameworks','normal'],
+    ['• Reduced infrastructure provisioning time by 70–80% using Terraform','normal'],
+    ['• Reduced test maintenance effort by ~30% using AI-driven automation','normal'],
+    ['','normal'],
+    ['CERTIFICATIONS','heading'],
+    ['• Claude 101 — Anthropic (2026)  |  verify.skilljar.com/c/oqddmdygjakx','normal'],
+    ['• Claude Code in Action — Anthropic (2026)  |  verify.skilljar.com/c/r5vs83986w9d','normal'],
+    ['• OCI AI Foundation Associate — Oracle (2025)','normal'],
+    ['• OCI Foundation Associate — Oracle (2022, 2023)','normal'],
+    ['• Oracle Java Certified Professional — Oracle (2017)','normal'],
+    ['','normal'],
+    ['PROFESSIONAL EXPERIENCE','heading'],
+    ['Oracle  |  Principal Member of Technical Staff — QA Lead / Lead SDET','subheading'],
+    ['Sep 2022 – April 2026  |  Gurgaon, India','normal'],
+    ['• Owned end-to-end QA strategy for AGCS, cloud-native identity governance platform on OCI','normal'],
+    ['• Designed AI-driven, self-healing automation — reduced test flakiness & maintenance by ~30%','normal'],
+    ['• Improved regression efficiency by ~50% via parallel execution and data-driven testing','normal'],
+    ['• Reduced infra provisioning time by 70–80% using Terraform-based IaC','normal'],
+    ['• Led and mentored QA teams; drove automation adoption across 100+ OCI teams','normal'],
+    ['• Automated validation of OID, OUD, EBS, Active Directory, NetSuite, Fusion connectors','normal'],
+    ['','normal'],
+    ['S&P Global (IHS Markit)  |  Senior QA Engineer / Lead','subheading'],
+    ['May 2017 – Sep 2022','normal'],
+    ['• Led automation for high-scale financial platforms — improved regression efficiency by ~50%','normal'],
+    ['• Built UI/API automation with Selenium, Java, TestNG, BDD; backend validation on AWS','normal'],
+    ['• Star Award 2021','normal'],
+    ['','normal'],
+    ['SirionLabs  |  Senior Test Engineer','subheading'],
+    ['Dec 2014 – May 2017','normal'],
+    ['• Built automation for AI-based contract management SaaS platform','normal'],
+    ['• Star Award 2016','normal'],
+    ['','normal'],
+    ['CyberQ Consulting  |  Software Test Engineer','subheading'],
+    ['May 2013 – Nov 2014','normal'],
+    ['• Automation frameworks and API/database validation for government systems (NIC)','normal'],
+    ['','normal'],
+    ['Eastern Horizon Solutions  |  Software Tester','subheading'],
+    ['May 2012 – Apr 2013','normal'],
+    ['• Manual and regression testing for e-commerce applications','normal'],
+    ['','normal'],
+    ['EDUCATION','heading'],
+    ['B.Tech in Computer Science Engineering','normal'],
+    ['Maharshi Dayanand University (MDU) — 2012','normal'],
+  ];
+
   const J=window.jspdf&&window.jspdf.jsPDF;
-  if(!J){const b=new Blob([content],{type:'text/plain'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='Gaurav_Arora_Resume.txt';a.click();return}
+  if(!J){
+    const txt=lines.map(l=>l[0]).join('\n');
+    const b=new Blob([txt],{type:'text/plain'});
+    const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='Gaurav_Arora_Resume.txt';a.click();
+    return;
+  }
+
   const doc=new J({unit:'pt',format:'a4'});
-  const pageW=doc.internal.pageSize.getWidth();
-  const pageH=doc.internal.pageSize.getHeight();
-  const margin=48;const maxW=pageW-margin*2;
-  doc.setFont('helvetica','normal');doc.setFontSize(11);
-  const lines=doc.splitTextToSize(content,maxW);
-  const lh=15;let y=margin;
-  for(const line of lines){
-    if(y+lh>pageH-margin){doc.addPage();y=margin}
-    if(/^[A-Z][A-Z &/().+-]+$/.test(line.trim())&&line.trim().length>2&&line.trim().length<40){doc.setFont('helvetica','bold')}else{doc.setFont('helvetica','normal')}
-    doc.text(line,margin,y);y+=lh;
+  const W=doc.internal.pageSize.getWidth();
+  const H=doc.internal.pageSize.getHeight();
+  const ml=45,mr=45,maxW=W-ml-mr;
+  let y=50;
+
+  const addPage=()=>{doc.addPage();y=50};
+  const check=(h)=>{if(y+h>H-40)addPage()};
+
+  for(const [text,type] of lines){
+    if(!text){y+=6;continue}
+    switch(type){
+      case 'title':
+        check(28);doc.setFont('helvetica','bold');doc.setFontSize(18);
+        doc.text(text,W/2,y,{align:'center'});y+=22;break;
+      case 'subtitle':
+        check(16);doc.setFont('helvetica','normal');doc.setFontSize(11);doc.setTextColor(80,100,160);
+        doc.text(text,W/2,y,{align:'center'});doc.setTextColor(0,0,0);y+=14;break;
+      case 'heading':
+        check(22);y+=4;
+        doc.setFont('helvetica','bold');doc.setFontSize(9.5);doc.setTextColor(60,60,60);
+        doc.text(text.toUpperCase(),ml,y);
+        doc.setDrawColor(180,180,180);doc.line(ml,y+3,W-mr,y+3);
+        doc.setTextColor(0,0,0);y+=14;break;
+      case 'subheading':
+        check(14);doc.setFont('helvetica','bold');doc.setFontSize(9.5);doc.setTextColor(30,30,30);
+        doc.text(text,ml,y);doc.setTextColor(0,0,0);y+=12;break;
+      default:
+        doc.setFont('helvetica','normal');doc.setFontSize(8.8);doc.setTextColor(50,50,50);
+        const wrapped=doc.splitTextToSize(text,maxW);
+        for(const ln of wrapped){check(11);doc.text(ln,ml,y);y+=11;}
+        doc.setTextColor(0,0,0);
+    }
   }
   doc.save('Gaurav_Arora_Resume.pdf');
 }
